@@ -1,0 +1,27 @@
+{
+	"object_level_groups":false,
+	
+	"suppress_missing_data_nodes":false,
+	
+	"relationships":
+	{
+		"draw_unlock":true,
+		"draw_functional":true,
+		"draw_appear":true,
+		"draw_capture":true,
+		"draw_visit":true,
+		"draw_resident":true,
+		"draw_romance":true
+	},
+	
+	"nodes":
+	{
+		"draw_player_level":true,
+		"draw_seeds":true,
+		"draw_plants":true,
+		"draw_produce":true,
+		"draw_pinatas":true,
+		"draw_gameplay":true
+		
+	}
+}

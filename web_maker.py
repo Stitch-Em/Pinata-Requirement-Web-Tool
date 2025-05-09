@@ -4,39 +4,67 @@ import graphviz
 import json
 import os
 
+os.environ["PATH"] += os.pathsep + 'C:/Program Files (x86)/Graphviz/bin/'
 
 ##############################################################################################################################
-#Edit these parameters to change how the program runs
+#User Customisable Settings
 ##############################################################################################################################
 
 
 #The name of the json file we're going to load
 data_file = 'data.json'
 
+settings_file = 'settings.json'
+
+
+
+#Read the json data file
+with open(settings_file) as in_file:
+    settings = json.load(in_file)
+
+
 
 #Whether we group nodes by their object level
-level_groups = False
+level_groups = settings['object_level_groups']
+
+
 
 
 #These booleans control whether a particular connection type is drawn
-draw_connection = {
-    'Appear':True,
-    'Capture':True,
-    'Visit':True,
-    'Resident':True,
-    'Romance':True
+draw_relationship = {
+    'Unlock':settings['relationships']['draw_unlock'],
+    'Functional':settings['relationships']['draw_functional'],
+    'Appear':settings['relationships']['draw_appear'],
+    'Capture':settings['relationships']['draw_capture'],
+    'Visit':settings['relationships']['draw_visit'],
+    'Resident':settings['relationships']['draw_resident'],
+    'Romance':settings['relationships']['draw_romance']
     }
+
+
+
 
 
 #These booleans control the which object types we add to the graph
 draw_type = {
-    'Pinata':True,
-    'Plant':True,
-    'Gameplay':True
+    'Pinata':settings['nodes']['draw_pinatas'],
+    'Plant':settings['nodes']['draw_plants'],
+    'Seed':settings['nodes']['draw_seeds'],
+    'Produce':settings['nodes']['draw_produce'],
+    'Gameplay':settings['nodes']['draw_gameplay'],
+    'Player_Level':settings['nodes']['draw_player_level']
     }
 
 #If set to true it won't make a red node for requirements that are missing in the data
-surpress_missing_data_nodes = False
+surpress_missing_data_nodes = settings['suppress_missing_data_nodes']
+
+
+
+
+##############################################################################################################################
+#Static settings
+##############################################################################################################################
+
 
 #The colour given to nodes based off their primary location
 location_colour = {
@@ -50,6 +78,8 @@ location_colour = {
 
 #The colour coding given to different requirement types
 link_colour = {
+    'Unlock':'white',
+    'Functional':'white',
     'Appear':'white',
     'Capture':'green',
     'Visit':'blue',
@@ -63,7 +93,10 @@ link_colour = {
 type_shapes = {
     'Pinata':'polygon',
     'Plant':'diamond',
-    'Gameplay':'pentagon'
+    'Seed':'invtriangle',
+    'Produce':'triangle',
+    'Gameplay':'pentagon',
+    'Player_Level':'pentagon'
     }
 
 
@@ -88,6 +121,11 @@ graph.attr(bgcolor="black", fontcolor='white')
 
 #graph.attr(overlap="scalexy")
 
+#graph.attr(epsilon="0.000000000000000001")
+
+
+
+#graph.attr(model="subset")
 
 #Keep track of nodes defined in the json file
 names = []
@@ -126,23 +164,25 @@ for obj in data['Objects']:
     #Get the requirements for an object
     requirements = obj['Requirements']
 
-    #Loop through all the requiremnt types 
-    for requirement_type in requirements.keys():
-        #Check to see if we are drawing that requirement type
-        if draw_connection[requirement_type]:
-            #Loop through all the requirememnts in the type
-            for req in requirements[requirement_type]:
-                #If the requirement is in the graph draw a normal node
-                if req in names:
-                    graph.edge(obj['Name'],req, color = link_colour[requirement_type])
-                    
-                #If it's not in the list of requirements
-                else:
-                    #If we are not surpressing missing requirement nodes
-                    if not(surpress_missing_data_nodes):
-                        #Make a red node and draw a red edge to it to denote that this object is missing from the data
-                        graph.node(req, color = 'red', fontcolor='white')
-                        graph.edge(obj['Name'], req, color = 'red')
+    #Still have to check if we are drawing these objects to prevent ghost connections
+    if draw_type[obj['Type']]:
+        #Loop through all the requiremnt types 
+        for requirement_type in requirements.keys():
+            #Check to see if we are drawing that requirement type
+            if draw_relationship[requirement_type]:
+                #Loop through all the requirememnts in the type
+                for req in requirements[requirement_type]:
+                    #If the requirement is in the graph draw a normal node
+                    if req in names:
+                        graph.edge(obj['Name'],req, color = link_colour[requirement_type])
+                        
+                    #If it's not in the list of requirements
+                    else:
+                        #If we are not surpressing missing requirement nodes
+                        if not(surpress_missing_data_nodes):
+                            #Make a red node and draw a red edge to it to denote that this object is missing from the data
+                            graph.node(req, color = 'red', fontcolor='white')
+                            graph.edge(obj['Name'], req, color = 'red')
 
 
 #Sort the object levels in reverse

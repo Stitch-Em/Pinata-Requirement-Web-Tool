@@ -1,5 +1,53 @@
 {
     "Objects": [
+		{
+            "Name": "Level 0",
+            "Type": "Player_Level",
+            "Primary_Location": "Garden",
+            "Lvl": 1,
+            "Requirements":{
+            }
+        },
+		{
+            "Name": "Level 1",
+            "Type": "Player_Level",
+            "Primary_Location": "Garden",
+            "Lvl": 1,
+            "Requirements":{
+            }
+        },
+		{
+            "Name": "Level 2",
+            "Type": "Player_Level",
+            "Primary_Location": "Garden",
+            "Lvl": 1,
+            "Requirements":{
+            }
+        },
+		{
+            "Name": "Level 3",
+            "Type": "Player_Level",
+            "Primary_Location": "Garden",
+            "Lvl": 1,
+            "Requirements":{
+            }
+        },
+		{
+            "Name": "Level 4",
+            "Type": "Player_Level",
+            "Primary_Location": "Garden",
+            "Lvl": 1,
+            "Requirements":{
+            }
+        },
+		{
+            "Name": "Level 5",
+            "Type": "Player_Level",
+            "Primary_Location": "Garden",
+            "Lvl": 1,
+            "Requirements":{
+            }
+        },
         {
             "Name": "Afig",
             "Type": "Pinata",
@@ -55,15 +103,29 @@
         },
         {
             "Name": "Apple",
+            "Type": "Produce",
+			"Primary_Location": "Garden",
+            "Lvl": 2,
+            "Requirements": {
+				"Functional": [
+					"Apple Tree"
+				]
+            }
+        },
+		{
+            "Name": "Apple Tree",
             "Type": "Plant",
 			"Primary_Location": "Garden",
             "Lvl": 2,
             "Requirements": {
+				"Functional": [
+					"Apple Tree Seed"
+				]
             }
         },
         {
-            "Name": "Apple Seed",
-            "Type": "Plant",
+            "Name": "Apple Tree Seed",
+            "Type": "Seed",
 			"Primary_Location": "Garden",
             "Lvl": 2,
             "Requirements": {
@@ -81,8 +143,8 @@
                 "Capture": [
                 ],
                 "Visit": [
-                    "Apple",
-                    "Holly"
+                    "Apple Tree",
+                    "Holly Bush"
                 ],
                 "Resident": [
                 ],
@@ -99,20 +161,21 @@
             "Requirements": {
                 "Appear": [
                     "Afig",
-                    "Poppy",
-                    "Mint"
+                    "Poppy Plant",
+                    "Mint Plant"
                 ],
                 "Capture": [
                 ],
                 "Visit": [
-                    "Poppy",
-                    "Mint"
+                    "Poppy Plant",
+                    "Mint Plant"
                 ],
                 "Resident": [
-                    "Poppy"
+					"Afig",
+                    "Poppy Flowerhead"
                 ],
                 "Romance": [
-                    "Pansy"
+                    "Pansy Flowerhead"
                 ]
             }
         },
@@ -158,17 +221,31 @@
                 ]
             }
         },
+		{
+            "Name": "Buttercup Flowerhead",
+            "Type": "Produce",
+			"Primary_Location": "Garden",
+            "Lvl": 1,
+            "Requirements": {
+				"Functional": [
+					"Buttercup Plant"
+				]
+            }
+        },
         {
-            "Name": "Buttercup",
+            "Name": "Buttercup Plant",
             "Type": "Plant",
 			"Primary_Location": "Garden",
             "Lvl": 1,
             "Requirements": {
+				"Functional": [
+					"Buttercup Seed"
+				]
             }
         },
         {
             "Name": "Buttercup Seed",
-            "Type": "Plant",
+            "Type": "Seed",
 			"Primary_Location": "Garden",
             "Lvl": 1,
             "Requirements": {
@@ -176,31 +253,82 @@
         },
         {
             "Name": "Carrot",
-            "Type": "Plant",
+            "Type": "Produce",
+			"Primary_Location": "Garden",
+            "Lvl": 1,
+            "Requirements": {
+				"Functional": [
+					"Carrot Seed"
+				]
+            }
+        },
+		{
+            "Name": "Carrot Seed",
+            "Type": "Seed",
 			"Primary_Location": "Garden",
             "Lvl": 1,
             "Requirements": {
             }
         },
+		{
+            "Name": "Clover Flowerhead",
+            "Type": "Produce",
+			"Primary_Location": "Garden",
+            "Lvl": 1,
+            "Requirements": {
+				"Functional": [
+					"Clover Plant"
+				]
+            }
+        },
         {
-            "Name": "Clover",
+            "Name": "Clover Plant",
             "Type": "Plant",
 			"Primary_Location": "Garden",
             "Lvl": 1,
             "Requirements": {
+				"Functional": [
+					"Clover Seed"
+				]
             }
         },
         {
             "Name": "Clover Seed",
+            "Type": "Seed",
+			"Primary_Location": "Garden",
+            "Lvl": 1,
+            "Requirements": {
+				"Unlock":
+				[
+					"Level 0"
+				]
+            }
+        },
+		{
+            "Name": "Daisy Flowerhead",
+            "Type": "Produce",
+			"Primary_Location": "Garden",
+            "Lvl": 1,
+            "Requirements": {
+				"Functional": [
+					"Daisy Plant"
+				]
+            }
+        },
+		{
+            "Name": "Daisy Plant",
             "Type": "Plant",
 			"Primary_Location": "Garden",
             "Lvl": 1,
             "Requirements": {
+				"Functional": [
+					"Daisy Seed"
+				]
             }
         },
         {
             "Name": "Daisy Seed",
-            "Type": "Plant",
+            "Type": "Seed",
 			"Primary_Location": "Garden",
             "Lvl": 1,
             "Requirements": {
@@ -229,8 +357,30 @@
                 ]
             }
         },
+		{
+            "Name": "Holly Berry",
+            "Type": "Produce",
+			"Primary_Location": "Garden",
+            "Lvl": 2,
+            "Requirements": {
+				"Functional": [
+					"Holly Bush"
+				]
+            }
+        },
         {
-            "Name": "Holly",
+            "Name": "Holly Bush",
+            "Type": "Plant",
+			"Primary_Location": "Garden",
+            "Lvl": 2,
+            "Requirements": {
+				"Functional": [
+					"Holly Bush Seed"
+				]
+            }
+        },
+		{
+            "Name": "Holly Bush Seed",
             "Type": "Plant",
 			"Primary_Location": "Garden",
             "Lvl": 2,
@@ -250,10 +400,10 @@
                 ],
                 "Visit": [
                     "Afig",
-                    "Clover"
+                    "Clover Plant"
                 ],
                 "Resident": [
-                    "Clover"
+                    "Clover Flowerhead"
                 ],
                 "Romance": [
                     "Afig"
@@ -301,9 +451,31 @@
                 ]
             }
         },
+		{
+            "Name": "Mint Flowerhead",
+            "Type": "Produce",
+			"Primary_Location": "Garden",
+            "Lvl": 1,
+            "Requirements": {
+				"Functional": [
+					"Mint Plant"
+				]
+            }
+        },
         {
-            "Name": "Mint",
+            "Name": "Mint Plant",
             "Type": "Plant",
+			"Primary_Location": "Garden",
+            "Lvl": 1,
+            "Requirements": {
+				"Functional": [
+					"Mint Seed"
+				]
+            }
+        },
+		{
+            "Name": "Mint Seed",
+            "Type": "Seed",
 			"Primary_Location": "Garden",
             "Lvl": 1,
             "Requirements": {
@@ -331,25 +503,92 @@
                 ]
             }
         },
+		{
+            "Name": "Pansy Flowerhead",
+            "Type": "Produce",
+			"Primary_Location": "Garden",
+            "Lvl": 2,
+            "Requirements": {
+				"Functional": [
+					"Pansy Plant"
+				]
+            }
+        },
         {
-            "Name": "Pansy",
+            "Name": "Pansy Plant",
             "Type": "Plant",
+			"Primary_Location": "Garden",
+            "Lvl": 2,
+            "Requirements": {
+				"Functional": [
+					"Pansy Seed"
+				]
+            }
+        },
+		{
+            "Name": "Pansy Seed",
+            "Type": "Seed",
 			"Primary_Location": "Garden",
             "Lvl": 2,
             "Requirements": {
             }
         },
+		
         {
             "Name": "Plum",
+            "Type": "Produce",
+			"Primary_Location": "Garden",
+            "Lvl": 3,
+            "Requirements": {
+				"Functional": [
+					"Plum Tree"
+				]
+            }
+        },
+		 {
+            "Name": "Plum Tree",
             "Type": "Plant",
+			"Primary_Location": "Garden",
+            "Lvl": 3,
+            "Requirements": {
+				"Functional": [
+					"Plum Tree Seed"
+				]
+            }
+        },
+		{
+            "Name": "Plum Tree Seed",
+            "Type": "Seed",
 			"Primary_Location": "Garden",
             "Lvl": 3,
             "Requirements": {
             }
         },
+		{
+            "Name": "Poppy Flowerhead",
+            "Type": "Produce",
+			"Primary_Location": "Garden",
+            "Lvl": 1,
+            "Requirements": {
+				"Functional": [
+					"Poppy Plant"
+				]
+            }
+        },
         {
-            "Name": "Poppy",
+            "Name": "Poppy Plant",
             "Type": "Plant",
+			"Primary_Location": "Garden",
+            "Lvl": 1,
+            "Requirements": {
+				"Functional": [
+					"Poppy Seed"
+				]
+            }
+        },
+		{
+            "Name": "Poppy Seed",
+            "Type": "Seed",
 			"Primary_Location": "Garden",
             "Lvl": 1,
             "Requirements": {
@@ -445,20 +684,20 @@
             "Lvl": 2,
             "Requirements": {
                 "Appear": [
-                    "Buttercup",
-                    "Clover"
+                    "Buttercup Plant",
+                    "Clover Plant"
                 ],
                 "Capture": [
                 ],
                 "Visit": [
                     "Any Fruit Plant",
-                    "Buttercup"
+                    "Buttercup Plant"
                 ],
                 "Resident": [
                     "Any Fruit"
                 ],
                 "Romance": [
-                    "Pansy"
+                    "Pansy Flowerhead"
                 ]
             }
         },
@@ -482,17 +721,53 @@
                 ]
             }
         },
-        {
+		{
             "Name": "Tomato",
+            "Type": "Produce",
+			"Primary_Location": "Garden",
+            "Lvl": 2,
+            "Requirements": {
+				"Functional": [
+					"Tomato Vine"
+				]
+            }
+        },
+        {
+            "Name": "Tomato Vine",
             "Type": "Plant",
 			"Primary_Location": "Garden",
             "Lvl": 2,
             "Requirements": {
+				"Functional": [
+					"Tomato Seed"
+				]
+            }
+        },
+		{
+            "Name": "Tomato Seed",
+            "Type": "Seed",
+			"Primary_Location": "Garden",
+            "Lvl": 2,
+            "Requirements": {
+				"Unlock": [
+					"Level 0"
+				]
             }
         },
         {
             "Name": "Turnip",
-            "Type": "Plant",
+            "Type": "Produce",
+			"Primary_Location": "Garden",
+            "Lvl": 1,
+            "Requirements": {
+				"Functional": [
+					"Turnip Seed"
+				]
+            }
+        },
+		{
+            "Name": "Turnip Seed",
+            "Type": "Seed",
 			"Primary_Location": "Garden",
             "Lvl": 1,
             "Requirements": {
