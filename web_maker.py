@@ -113,7 +113,7 @@ path = f'{os.getcwd()}/food-web.gv'
 
 
 #Initialise the graph setting the name ot the correct path so it saves ot the correct location 
-graph = graphviz.Digraph(filename = path)#, engine='neato')
+graph = graphviz.Digraph(filename = path)#, engine='fdp')
 
 #Make the graph black with white text
 graph.attr(bgcolor="black", fontcolor='white')
@@ -124,8 +124,7 @@ graph.attr(bgcolor="black", fontcolor='white')
 #graph.attr(epsilon="0.000000000000000001")
 
 
-
-#graph.attr(model="subset")
+graph.attr(TBbalance="max")
 
 #Keep track of nodes defined in the json file
 names = []
@@ -150,9 +149,16 @@ for obj in data['Objects']:
                 c.node(str(lvl), style='invisible')
                 #Create node in subgraph
                 c.node(obj['Name'], shape = type_shapes[obj['Type']], color = location_colour[obj["Primary_Location"]], fontcolor='white')
-        else:            
-            #Just make node in main graph if we aren't using a subgraph
-            graph.node(obj['Name'], shape = type_shapes[obj['Type']], color = location_colour[obj['Primary_Location']], fontcolor='white')
+        else:
+            if 'Group' in obj.keys():
+                group_name = obj['Group']
+
+                with graph.subgraph(name = f'cluster_{group_name}') as c:
+                    c.node(obj['Name'], shape = type_shapes[obj['Type']], color = location_colour[obj["Primary_Location"]], fontcolor='white')
+
+            else:
+                #Just make node in main graph if we aren't using a subgraph
+                graph.node(obj['Name'], shape = type_shapes[obj['Type']], color = location_colour[obj['Primary_Location']], fontcolor='white')
 
         #Keep a list of all the objects to be drawn
         names.append(obj['Name'])

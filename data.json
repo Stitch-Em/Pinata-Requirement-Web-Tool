@@ -106,6 +106,7 @@
             "Type": "Produce",
 			"Primary_Location": "Garden",
             "Lvl": 2,
+			"Group":"Apple",
             "Requirements": {
 				"Functional": [
 					"Apple Tree"
@@ -117,6 +118,7 @@
             "Type": "Plant",
 			"Primary_Location": "Garden",
             "Lvl": 2,
+			"Group":"Apple",
             "Requirements": {
 				"Functional": [
 					"Apple Tree Seed"
@@ -128,6 +130,7 @@
             "Type": "Seed",
 			"Primary_Location": "Garden",
             "Lvl": 2,
+			"Group":"Apple",
             "Requirements": {
             }
         },
@@ -226,6 +229,7 @@
             "Type": "Produce",
 			"Primary_Location": "Garden",
             "Lvl": 1,
+			"Group":"Buttercup",
             "Requirements": {
 				"Functional": [
 					"Buttercup Plant"
@@ -237,6 +241,7 @@
             "Type": "Plant",
 			"Primary_Location": "Garden",
             "Lvl": 1,
+			"Group":"Buttercup",
             "Requirements": {
 				"Functional": [
 					"Buttercup Seed"
@@ -248,6 +253,7 @@
             "Type": "Seed",
 			"Primary_Location": "Garden",
             "Lvl": 1,
+			"Group":"Buttercup",
             "Requirements": {
             }
         },
@@ -256,6 +262,7 @@
             "Type": "Produce",
 			"Primary_Location": "Garden",
             "Lvl": 1,
+			"Group":"Carrot",
             "Requirements": {
 				"Functional": [
 					"Carrot Seed"
@@ -267,6 +274,7 @@
             "Type": "Seed",
 			"Primary_Location": "Garden",
             "Lvl": 1,
+			"Group":"Carrot",
             "Requirements": {
             }
         },
@@ -275,6 +283,7 @@
             "Type": "Produce",
 			"Primary_Location": "Garden",
             "Lvl": 1,
+			"Group":"Clover",
             "Requirements": {
 				"Functional": [
 					"Clover Plant"
@@ -286,6 +295,7 @@
             "Type": "Plant",
 			"Primary_Location": "Garden",
             "Lvl": 1,
+			"Group":"Clover",
             "Requirements": {
 				"Functional": [
 					"Clover Seed"
@@ -297,6 +307,7 @@
             "Type": "Seed",
 			"Primary_Location": "Garden",
             "Lvl": 1,
+			"Group":"Clover",
             "Requirements": {
 				"Unlock":
 				[
@@ -309,6 +320,7 @@
             "Type": "Produce",
 			"Primary_Location": "Garden",
             "Lvl": 1,
+			"Group":"Daisy",
             "Requirements": {
 				"Functional": [
 					"Daisy Plant"
@@ -320,6 +332,7 @@
             "Type": "Plant",
 			"Primary_Location": "Garden",
             "Lvl": 1,
+			"Group":"Daisy",
             "Requirements": {
 				"Functional": [
 					"Daisy Seed"
@@ -331,6 +344,7 @@
             "Type": "Seed",
 			"Primary_Location": "Garden",
             "Lvl": 1,
+			"Group":"Daisy",
             "Requirements": {
             }
         },
@@ -362,6 +376,7 @@
             "Type": "Produce",
 			"Primary_Location": "Garden",
             "Lvl": 2,
+			"Group":"Holly",
             "Requirements": {
 				"Functional": [
 					"Holly Bush"
@@ -373,6 +388,7 @@
             "Type": "Plant",
 			"Primary_Location": "Garden",
             "Lvl": 2,
+			"Group":"Holly",
             "Requirements": {
 				"Functional": [
 					"Holly Bush Seed"
@@ -384,6 +400,7 @@
             "Type": "Plant",
 			"Primary_Location": "Garden",
             "Lvl": 2,
+			"Group":"Holly",
             "Requirements": {
             }
         },
@@ -456,6 +473,7 @@
             "Type": "Produce",
 			"Primary_Location": "Garden",
             "Lvl": 1,
+			"Group":"Mint",
             "Requirements": {
 				"Functional": [
 					"Mint Plant"
@@ -467,6 +485,7 @@
             "Type": "Plant",
 			"Primary_Location": "Garden",
             "Lvl": 1,
+			"Group":"Mint",
             "Requirements": {
 				"Functional": [
 					"Mint Seed"
@@ -478,6 +497,7 @@
             "Type": "Seed",
 			"Primary_Location": "Garden",
             "Lvl": 1,
+			"Group":"Mint",
             "Requirements": {
             }
         },
@@ -508,6 +528,7 @@
             "Type": "Produce",
 			"Primary_Location": "Garden",
             "Lvl": 2,
+			"Group":"Pansy",
             "Requirements": {
 				"Functional": [
 					"Pansy Plant"
@@ -519,6 +540,7 @@
             "Type": "Plant",
 			"Primary_Location": "Garden",
             "Lvl": 2,
+			"Group":"Pansy",
             "Requirements": {
 				"Functional": [
 					"Pansy Seed"
@@ -530,6 +552,7 @@
             "Type": "Seed",
 			"Primary_Location": "Garden",
             "Lvl": 2,
+			"Group":"Pansy",
             "Requirements": {
             }
         },
@@ -539,6 +562,7 @@
             "Type": "Produce",
 			"Primary_Location": "Garden",
             "Lvl": 3,
+			"Group":"Plum",
             "Requirements": {
 				"Functional": [
 					"Plum Tree"
@@ -550,6 +574,7 @@
             "Type": "Plant",
 			"Primary_Location": "Garden",
             "Lvl": 3,
+			"Group":"Plum",
             "Requirements": {
 				"Functional": [
 					"Plum Tree Seed"
@@ -561,6 +586,7 @@
             "Type": "Seed",
 			"Primary_Location": "Garden",
             "Lvl": 3,
+			"Group":"Plum",
             "Requirements": {
             }
         },
@@ -569,6 +595,7 @@
             "Type": "Produce",
 			"Primary_Location": "Garden",
             "Lvl": 1,
+			"Group":"Poppy",
             "Requirements": {
 				"Functional": [
 					"Poppy Plant"
@@ -580,6 +607,7 @@
             "Type": "Plant",
 			"Primary_Location": "Garden",
             "Lvl": 1,
+			"Group":"Poppy",
             "Requirements": {
 				"Functional": [
 					"Poppy Seed"
@@ -591,6 +619,7 @@
             "Type": "Seed",
 			"Primary_Location": "Garden",
             "Lvl": 1,
+			"Group":"Poppy",
             "Requirements": {
             }
         },
@@ -726,6 +755,7 @@
             "Type": "Produce",
 			"Primary_Location": "Garden",
             "Lvl": 2,
+			"Group":"Tomato",
             "Requirements": {
 				"Functional": [
 					"Tomato Vine"
@@ -737,6 +767,7 @@
             "Type": "Plant",
 			"Primary_Location": "Garden",
             "Lvl": 2,
+			"Group":"Tomato",
             "Requirements": {
 				"Functional": [
 					"Tomato Seed"
@@ -748,6 +779,7 @@
             "Type": "Seed",
 			"Primary_Location": "Garden",
             "Lvl": 2,
+			"Group":"Tomato",
             "Requirements": {
 				"Unlock": [
 					"Level 0"
@@ -759,6 +791,7 @@
             "Type": "Produce",
 			"Primary_Location": "Garden",
             "Lvl": 1,
+			"Group":"Turnip",
             "Requirements": {
 				"Functional": [
 					"Turnip Seed"
@@ -770,6 +803,7 @@
             "Type": "Seed",
 			"Primary_Location": "Garden",
             "Lvl": 1,
+			"Group":"Turnip",
             "Requirements": {
             }
         },
