@@ -1,0 +1,712 @@
+{
+  "Level 0": {
+    "Type": "Player_Level",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Requirements": {}
+  },
+  "Level 1": {
+    "Type": "Player_Level",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Requirements": {}
+  },
+  "Level 2": {
+    "Type": "Player_Level",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Requirements": {}
+  },
+  "Level 3": {
+    "Type": "Player_Level",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Requirements": {}
+  },
+  "Level 4": {
+    "Type": "Player_Level",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Requirements": {}
+  },
+  "Level 5": {
+    "Type": "Player_Level",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Requirements": {}
+  },
+  "Afig": {
+    "Type": "Pinata",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Requirements": {
+      "Appear": [
+        "Tutorial"
+      ],
+      "Capture": [],
+      "Visit": [],
+      "Resident": [
+        "Any Flower"
+      ],
+      "Romance": [
+        "Tomato"
+      ]
+    }
+  },
+  "Any Flower": {
+    "Type": "Plant",
+    "Primary_Location": "NA",
+    "Lvl": 1,
+    "Requirements": {}
+  },
+  "Any Fruit": {
+    "Type": "Plant",
+    "Primary_Location": "NA",
+    "Lvl": 2,
+    "Requirements": {}
+  },
+  "Any Fruit Plant": {
+    "Type": "Plant",
+    "Primary_Location": "NA",
+    "Lvl": 2,
+    "Requirements": {}
+  },
+  "Any Seed": {
+    "Type": "Plant",
+    "Primary_Location": "NA",
+    "Lvl": 2,
+    "Requirements": {}
+  },
+  "Apple": {
+    "Type": "Produce",
+    "Primary_Location": "Garden",
+    "Lvl": 2,
+    "Group": "Apple",
+    "Requirements": {
+      "Functional": [
+        "Apple Tree"
+      ]
+    }
+  },
+  "Apple Tree": {
+    "Type": "Plant",
+    "Primary_Location": "Garden",
+    "Lvl": 2,
+    "Group": "Apple",
+    "Requirements": {
+      "Functional": [
+        "Apple Tree Seed"
+      ]
+    }
+  },
+  "Apple Tree Seed": {
+    "Type": "Seed",
+    "Primary_Location": "Garden",
+    "Lvl": 2,
+    "Group": "Apple",
+    "Requirements": {}
+  },
+  "Bagguette": {
+    "Type": "Pinata",
+    "Primary_Location": "Garden",
+    "Lvl": 2,
+    "Requirements": {
+      "Appear": [
+        "Any Fruit Plant"
+      ],
+      "Capture": [],
+      "Visit": [
+        "Apple Tree",
+        "Holly Bush"
+      ],
+      "Resident": [],
+      "Romance": [
+        "Any Fruit"
+      ]
+    }
+  },
+  "Bispotti": {
+    "Type": "Pinata",
+    "Primary_Location": "Garden",
+    "Lvl": 2,
+    "Requirements": {
+      "Appear": [
+        "Afig",
+        "Poppy Plant",
+        "Mint Plant"
+      ],
+      "Capture": [],
+      "Visit": [
+        "Poppy Plant",
+        "Mint Plant"
+      ],
+      "Resident": [
+        "Afig",
+        "Poppy Flowerhead"
+      ],
+      "Romance": [
+        "Pansy Flowerhead"
+      ]
+    }
+  },
+  "Bluejoy": {
+    "Type": "Pinata",
+    "Primary_Location": "Artic",
+    "Lvl": 3,
+    "Requirements": {
+      "Appear": [],
+      "Capture": [
+        "Clover Seed"
+      ],
+      "Visit": [],
+      "Resident": [
+        "Plum"
+      ],
+      "Romance": [
+        "Apple"
+      ]
+    }
+  },
+  "Bunnycomb": {
+    "Type": "Pinata",
+    "Primary_Location": "Garden",
+    "Lvl": 3,
+    "Requirements": {
+      "Appear": [
+        "Carrot"
+      ],
+      "Capture": [],
+      "Visit": [
+        "Carrot"
+      ],
+      "Resident": [
+        "Carrot"
+      ],
+      "Romance": []
+    }
+  },
+  "Buttercup Flowerhead": {
+    "Type": "Produce",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Group": "Buttercup",
+    "Requirements": {
+      "Functional": [
+        "Buttercup Plant"
+      ]
+    }
+  },
+  "Buttercup Plant": {
+    "Type": "Plant",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Group": "Buttercup",
+    "Requirements": {
+      "Functional": [
+        "Buttercup Seed"
+      ]
+    }
+  },
+  "Buttercup Seed": {
+    "Type": "Seed",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Group": "Buttercup",
+    "Requirements": {}
+  },
+  "Carrot": {
+    "Type": "Produce",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Group": "Carrot",
+    "Requirements": {
+      "Functional": [
+        "Carrot Seed"
+      ]
+    }
+  },
+  "Carrot Seed": {
+    "Type": "Seed",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Group": "Carrot",
+    "Requirements": {}
+  },
+  "Clover Flowerhead": {
+    "Type": "Produce",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Group": "Clover",
+    "Requirements": {
+      "Functional": [
+        "Clover Plant"
+      ]
+    }
+  },
+  "Clover Plant": {
+    "Type": "Plant",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Group": "Clover",
+    "Requirements": {
+      "Functional": [
+        "Clover Seed"
+      ]
+    }
+  },
+  "Clover Seed": {
+    "Type": "Seed",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Group": "Clover",
+    "Requirements": {
+      "Unlock": [
+        "Level 0"
+      ]
+    }
+  },
+  "Daisy Flowerhead": {
+    "Type": "Produce",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Group": "Daisy",
+    "Requirements": {
+      "Functional": [
+        "Daisy Plant"
+      ]
+    }
+  },
+  "Daisy Plant": {
+    "Type": "Plant",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Group": "Daisy",
+    "Requirements": {
+      "Functional": [
+        "Daisy Seed"
+      ]
+    }
+  },
+  "Daisy Seed": {
+    "Type": "Seed",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Group": "Daisy",
+    "Requirements": {}
+  },
+  "Glowmyworm": {
+    "Type": "Pinata",
+    "Primary_Location": "Garden",
+    "Lvl": 3,
+    "Requirements": {
+      "Appear": [
+        "Sour Mosquitoast Tamed"
+      ],
+      "Capture": [],
+      "Visit": [
+        "Light Source",
+        "Mosquitoast"
+      ],
+      "Resident": [
+        "Mosquitoast"
+      ],
+      "Romance": [
+        "Shellybean"
+      ]
+    }
+  },
+  "Holly Berry": {
+    "Type": "Produce",
+    "Primary_Location": "Garden",
+    "Lvl": 2,
+    "Group": "Holly",
+    "Requirements": {
+      "Functional": [
+        "Holly Bush"
+      ]
+    }
+  },
+  "Holly Bush": {
+    "Type": "Plant",
+    "Primary_Location": "Garden",
+    "Lvl": 2,
+    "Group": "Holly",
+    "Requirements": {
+      "Functional": [
+        "Holly Bush Seed"
+      ]
+    }
+  },
+  "Holly Bush Seed": {
+    "Type": "Plant",
+    "Primary_Location": "Garden",
+    "Lvl": 2,
+    "Group": "Holly",
+    "Requirements": {}
+  },
+  "Humdrop": {
+    "Type": "Pinata",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Requirements": {
+      "Appear": [
+        "Afig"
+      ],
+      "Capture": [],
+      "Visit": [
+        "Afig",
+        "Clover Plant"
+      ],
+      "Resident": [
+        "Clover Flowerhead"
+      ],
+      "Romance": [
+        "Afig"
+      ]
+    }
+  },
+  "Jellyboa": {
+    "Type": "Pinata",
+    "Primary_Location": "Desert",
+    "Lvl": 2,
+    "Requirements": {
+      "Appear": [],
+      "Capture": [
+        "Buttercup Seed"
+      ],
+      "Visit": [],
+      "Resident": [
+        "Sweetle"
+      ],
+      "Romance": [
+        "Any Seed"
+      ]
+    }
+  },
+  "Lickatoad": {
+    "Type": "Pinata",
+    "Primary_Location": "Garden",
+    "Lvl": 3,
+    "Requirements": {
+      "Appear": [],
+      "Capture": [],
+      "Visit": [],
+      "Resident": [
+        "Taffly"
+      ],
+      "Romance": [
+        "Bagguette"
+      ]
+    }
+  },
+  "Mint Flowerhead": {
+    "Type": "Produce",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Group": "Mint",
+    "Requirements": {
+      "Functional": [
+        "Mint Plant"
+      ]
+    }
+  },
+  "Mint Plant": {
+    "Type": "Plant",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Group": "Mint",
+    "Requirements": {
+      "Functional": [
+        "Mint Seed"
+      ]
+    }
+  },
+  "Mint Seed": {
+    "Type": "Seed",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Group": "Mint",
+    "Requirements": {}
+  },
+  "Mousemallow": {
+    "Type": "Pinata",
+    "Primary_Location": "Garden",
+    "Lvl": 2,
+    "Requirements": {
+      "Appear": [
+        "Turnip"
+      ],
+      "Capture": [],
+      "Visit": [
+        "Turnip"
+      ],
+      "Resident": [
+        "Turnip"
+      ],
+      "Romance": [
+        "Daisy Seed"
+      ]
+    }
+  },
+  "Pansy Flowerhead": {
+    "Type": "Produce",
+    "Primary_Location": "Garden",
+    "Lvl": 2,
+    "Group": "Pansy",
+    "Requirements": {
+      "Functional": [
+        "Pansy Plant"
+      ]
+    }
+  },
+  "Pansy Plant": {
+    "Type": "Plant",
+    "Primary_Location": "Garden",
+    "Lvl": 2,
+    "Group": "Pansy",
+    "Requirements": {
+      "Functional": [
+        "Pansy Seed"
+      ]
+    }
+  },
+  "Pansy Seed": {
+    "Type": "Seed",
+    "Primary_Location": "Garden",
+    "Lvl": 2,
+    "Group": "Pansy",
+    "Requirements": {}
+  },
+  "Plum": {
+    "Type": "Produce",
+    "Primary_Location": "Garden",
+    "Lvl": 3,
+    "Group": "Plum",
+    "Requirements": {
+      "Functional": [
+        "Plum Tree"
+      ]
+    }
+  },
+  "Plum Tree": {
+    "Type": "Plant",
+    "Primary_Location": "Garden",
+    "Lvl": 3,
+    "Group": "Plum",
+    "Requirements": {
+      "Functional": [
+        "Plum Tree Seed"
+      ]
+    }
+  },
+  "Plum Tree Seed": {
+    "Type": "Seed",
+    "Primary_Location": "Garden",
+    "Lvl": 3,
+    "Group": "Plum",
+    "Requirements": {}
+  },
+  "Poppy Flowerhead": {
+    "Type": "Produce",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Group": "Poppy",
+    "Requirements": {
+      "Functional": [
+        "Poppy Plant"
+      ]
+    }
+  },
+  "Poppy Plant": {
+    "Type": "Plant",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Group": "Poppy",
+    "Requirements": {
+      "Functional": [
+        "Poppy Seed"
+      ]
+    }
+  },
+  "Poppy Seed": {
+    "Type": "Seed",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Group": "Poppy",
+    "Requirements": {}
+  },
+  "Shellybean": {
+    "Type": "Pinata",
+    "Primary_Location": "Garden",
+    "Lvl": 2,
+    "Requirements": {
+      "Appear": [],
+      "Capture": [],
+      "Visit": [],
+      "Resident": [],
+      "Romance": []
+    }
+  },
+  "Sparrowmint": {
+    "Type": "Pinata",
+    "Primary_Location": "Garden",
+    "Lvl": 2,
+    "Requirements": {
+      "Appear": [
+        "Glowmyworm",
+        "Whirlm"
+      ],
+      "Capture": [],
+      "Visit": [
+        "Whirlm Romance Award"
+      ],
+      "Resident": [
+        "Whirlm"
+      ],
+      "Romance": [
+        "Glowmyworm"
+      ]
+    }
+  },
+  "Sweetle": {
+    "Type": "Pinata",
+    "Primary_Location": "Desert",
+    "Lvl": 3,
+    "Requirements": {
+      "Appear": [],
+      "Capture": [],
+      "Visit": [],
+      "Resident": [],
+      "Romance": []
+    }
+  },
+  "Syrupent": {
+    "Type": "Pinata",
+    "Primary_Location": "Garden",
+    "Lvl": 2,
+    "Requirements": {
+      "Appear": [
+        "Jellyboa"
+      ],
+      "Capture": [],
+      "Visit": [
+        "Jellyboa",
+        "Mousemallow"
+      ],
+      "Resident": [
+        "Jellyboa",
+        "Mousemallow"
+      ],
+      "Romance": [
+        "Lickatoad"
+      ]
+    }
+  },
+  "Taffly": {
+    "Type": "Pinata",
+    "Primary_Location": "Garden",
+    "Lvl": 2,
+    "Requirements": {
+      "Appear": [
+        "Buttercup Plant",
+        "Clover Plant"
+      ],
+      "Capture": [],
+      "Visit": [
+        "Any Fruit Plant",
+        "Buttercup Plant"
+      ],
+      "Resident": [
+        "Any Fruit"
+      ],
+      "Romance": [
+        "Pansy Flowerhead"
+      ]
+    }
+  },
+  "Tenritz": {
+    "Type": "Pinata",
+    "Primary_Location": "Jungle",
+    "Lvl": 2,
+    "Requirements": {
+      "Appear": [],
+      "Capture": [
+        "Any Fruit"
+      ],
+      "Visit": [],
+      "Resident": [],
+      "Romance": [
+        "Whirlm"
+      ]
+    }
+  },
+  "Tomato": {
+    "Type": "Produce",
+    "Primary_Location": "Garden",
+    "Lvl": 2,
+    "Group": "Tomato",
+    "Requirements": {
+      "Functional": [
+        "Tomato Vine"
+      ]
+    }
+  },
+  "Tomato Vine": {
+    "Type": "Plant",
+    "Primary_Location": "Garden",
+    "Lvl": 2,
+    "Group": "Tomato",
+    "Requirements": {
+      "Functional": [
+        "Tomato Seed"
+      ]
+    }
+  },
+  "Tomato Seed": {
+    "Type": "Seed",
+    "Primary_Location": "Garden",
+    "Lvl": 2,
+    "Group": "Tomato",
+    "Requirements": {
+      "Unlock": [
+        "Level 0"
+      ]
+    }
+  },
+  "Turnip": {
+    "Type": "Produce",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Group": "Turnip",
+    "Requirements": {
+      "Functional": [
+        "Turnip Seed"
+      ]
+    }
+  },
+  "Turnip Seed": {
+    "Type": "Seed",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Group": "Turnip",
+    "Requirements": {}
+  },
+  "Tutorial": {
+    "Type": "Gameplay",
+    "Primary_Location": "NA",
+    "Lvl": 0,
+    "Requirements": {}
+  },
+  "Whirlm": {
+    "Type": "Pinata",
+    "Primary_Location": "Garden",
+    "Lvl": 1,
+    "Requirements": {
+      "Appear": [],
+      "Capture": [],
+      "Visit": [],
+      "Resident": [],
+      "Romance": []
+    }
+  }
+}

@@ -11,6 +11,33 @@ os.environ["PATH"] += os.pathsep + 'C:/Program Files (x86)/Graphviz/bin/'
 ##############################################################################################################################
 
 
+
+def convert(data):
+    new_data = {}
+
+
+
+    for node in data['Objects']:
+        node_data = {}
+
+        for field in node.keys():
+            if field != 'Name':
+                node_data[field] = node[field]
+
+
+        new_data[node['Name']] = node_data
+            
+            
+
+            
+
+
+
+    with open('new.json', 'w') as out_file:
+        json.dump(new_data, out_file, indent = 2)
+
+
+
 #The name of the json file we're going to load
 data_file = 'data.json'
 
@@ -26,7 +53,6 @@ with open(settings_file) as in_file:
 
 #Whether we group nodes by their object level
 level_groups = settings['object_level_groups']
-
 
 
 
@@ -106,6 +132,10 @@ type_shapes = {
 #Read the json data file
 with open(data_file) as in_file:
     data = json.load(in_file)
+
+
+
+convert(data)
 
 
 #Create the path to the graph including its name
